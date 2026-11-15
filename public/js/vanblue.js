@@ -1013,6 +1013,8 @@
             { chapter: 6, panel: 'report', target: '#print-report', title: 'Tek tıkla uçuş tıbbı raporu', text: 'Canlı veriden oluşan, yazdırılabilir tıbbi rapor. Dünya\'ya gecikmeli senkronize ediliyor.' },
         ],
         index: -1, runId: 0, paused: false, active: false,
+        /** Presenter mode: no voice-over, no intro countdown, steps advance only on › / → clicks. */
+        manual: true,
 
         async start() {
             if (this.active) return;
@@ -1021,7 +1023,7 @@
             this.renderDots();
             this.setPauseIcon();
             chat.close();
-            await this.cover('intro');
+            if (!this.manual) await this.cover('intro');
             if (!this.active) return;
             $('tour-caption').classList.add('show');
             this.play(0);
@@ -1072,6 +1074,11 @@
             await step.before?.();
             await sleep(250);
             this.spotlight(step.target);
+
+            if (this.manual) {
+                await step.after?.();
+                return;
+            }
 
             await Promise.all([speakAsync(step.text), sleep(step.minMs || 4500)]);
             if (runId !== this.runId) return;

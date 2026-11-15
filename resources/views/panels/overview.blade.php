@@ -9,7 +9,7 @@
                     <span class="chip chip-cyan">ORION + DSH</span>
                 </div>
                 <h2 class="font-space text-3xl lg:text-4xl font-bold text-white tracking-tight">Mars'a giden yolda,<br><span class="bg-gradient-to-r from-cyberGreen to-cyberCyan bg-clip-text text-transparent">doktor her an yanınızda.</span></h2>
-                <p class="text-slate-400 text-sm mt-2 max-w-xl">Dünya ile iletişim <strong class="text-amber-300" id="ov-delay-inline">—</strong> gecikmeli. AegisHealth, mürettebatın sağlığını gemide, NASA standartlarıyla ve milisaniyeler içinde değerlendirir.</p>
+                <p class="text-slate-400 text-sm mt-2 max-w-xl">Dünya ile iletişim 22 dakikaya varan (şu an <strong class="text-amber-300" id="ov-delay-inline">—</strong>) gecikmeli. AegisHealth, mürettebatın sağlığını gemide, NASA standartlarıyla ve milisaniyeler içinde değerlendirir.</p>
                 <button onclick="VB.briefing.open()" class="btn btn-green mt-4 group">
                     <span class="relative flex w-2.5 h-2.5"><span class="absolute inline-flex w-full h-full rounded-full bg-black/40 animate-ping"></span><span class="relative inline-flex w-2.5 h-2.5 rounded-full bg-black/70"></span></span>
                     🎙️ AEGIS GÜNLÜK BRİFİNGİNİ BAŞLAT
