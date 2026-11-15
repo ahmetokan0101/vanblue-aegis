@@ -1056,6 +1056,10 @@
             this.index = index;
             const step = this.steps[index];
             if ('speechSynthesis' in window) speechSynthesis.cancel();
+            if (this.manual) {
+                if (briefing.isOpen) briefing.close();
+                if (conditions.playing) conditions.togglePlay();
+            }
 
             nav.go(step.panel);
             setText('tour-step', `${index + 1}/${this.steps.length}`);
