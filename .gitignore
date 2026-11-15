@@ -30,5 +30,6 @@ Thumbs.db
 /van.zip
 /.claude/settings.local.json
 /demo_video/assets/
+/demo_video/files/
 /demo_video/*.mp4
 /demo_video/*.pptx
