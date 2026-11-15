@@ -1,0 +1,266 @@
+{
+  "source": "VanBlue Aegis gemi içi tıbbi protokolleri — ISS tıbbi kontrol listesi yaklaşımı ve genel klinik kılavuzlardan uyarlanmıştır (karar destek amaçlı).",
+  "protocols": [
+    {
+      "id": "urogenital",
+      "title": "Ürogenital ağrı (penis / testis / kasık / idrar yolu)",
+      "keywords": ["penis", "penisim", "testis", "testisim", "yumurtalar", "skrotum", "torba", "genital", "cinsel organ", "kasık", "kasığım", "idrar yaparken", "idrarda yanma", "yanma hissi", "idrar yapamıyorum", "sık idrar", "akıntı", "üretra", "prostat", "vajina", "vajinal", "regl", "adet"],
+      "urgency": "urgent",
+      "related_condition_id": "renal_stones",
+      "spoken": "{name}, genital bölge ağrısı uzayda ciddiye alınması gereken bir şikâyet. Mikroyerçekiminde idrar yolu enfeksiyonu, idrar retansiyonu ve böbrek taşı riski artıyor; taş ağrısı penis ucuna ve kasığa yansıyabilir. İdrar yaparken yanma, kan, akıntı ya da testislerde şişlik var mı?",
+      "causes": [
+        {"name": "İdrar yolu enfeksiyonu / üretrit", "likelihood": 35, "space_related": true, "reason": "İdrar toplama cihazları ve azalmış sıvı alımı enfeksiyon riskini artırır; bağışıklık da baskılanmıştır."},
+        {"name": "Böbrek veya üreter taşı (yansıyan ağrı)", "likelihood": 30, "space_related": true, "reason": "Kemikten salınan kalsiyum idrara geçer; üreter taşı ağrısı kasık ve penis ucuna yayılır."},
+        {"name": "İdrar retansiyonu (mesane boşaltamama)", "likelihood": 20, "space_related": true, "reason": "Mikroyerçekiminde mesane dolgunluk hissi azalır; özellikle ilk günlerde sık görülür."},
+        {"name": "Lokal tahriş / travma (giysi, toplama cihazı)", "likelihood": 15, "space_related": true, "reason": "MAG/idrar toplama ekipmanı ve sıkı kıyafet sürtünmesi."}
+      ],
+      "steps": ["Ağrının tam yerini, başlangıcını ve şiddetini (1-10) kaydet", "İdrar strip testi yap (lökosit, nitrit, kan)", "Ultrason ile böbrek, mesane ve gerekirse skrotumu tara", "Günde en az 2.5 L sıvı al, idrar miktarını ve rengini kaydet", "Sıkı giysiyi ve idrar toplama ekipmanını kontrol et"],
+      "medications": [{"name": "İbuprofen", "dose": "400 mg, 8 saatte bir, tok karna", "note": "Ağrı ve inflamasyon için"}, {"name": "Siprofloksasin", "dose": "500 mg günde 2 kez, 3-7 gün", "note": "Sadece idrar testi enfeksiyonu destekliyorsa, Dünya hekim onayıyla"}, {"name": "Potasyum sitrat", "dose": "Protokole göre", "note": "Taş şüphesinde"}],
+      "questions": ["Ağrı aniden mi başladı, yavaş mı?", "İdrar yaparken yanma veya idrarda kan var mı?", "İdrarını tam yapabiliyor musun?", "Testislerde şişlik, kızarıklık veya dokununca ağrı var mı?", "Akıntı ya da ateş var mı?"],
+      "monitoring": ["Vücut ısısı", "İdrar miktarı ve rengi", "Ağrı skoru", "Kalp hızı"],
+      "escalate": "Ani ve şiddetli testis ağrısı (torsiyon — dakikalar önemli), 6 saatten uzun idrar yapamama, ateş ve titreme veya idrarda kan varsa ACİL.",
+      "avoid": ["İdrarı tutma; sıkıştığında hemen boşalt", "Sıkı iç çamaşırı / basınç giysisi ve idrar toplama cihazının bölgeyi sıkıştırması", "Kafein ve tuzlu yiyecekler (mesaneyi tahriş eder, taş riskini artırır)", "Test sonucu çıkmadan antibiyotiğe kendi kendine başlama"],
+      "expected_course": "Enfeksiyon veya tahriş ise ağrı kesici ve bol sıvıyla 24-48 saatte, uygun antibiyotikle 2-3 günde belirgin rahatlama beklenir. Taşta ağrı dalgalı seyreder; küçük taşlar genelde sıvı ile düşer. 48 saatte düzelme yoksa ultrason tekrarlanır."
+    },
+    {
+      "id": "joint",
+      "title": "Eklem ağrısı",
+      "keywords": ["eklem", "dizim", "diz", "omzum", "omuz", "dirsek", "bilek", "kalçam", "parmak", "romatizma"],
+      "urgency": "monitor",
+      "related_condition_id": "muscle_atrophy",
+      "spoken": "{name}, eklem ağrısı uzayda sık görülür: kas desteği azaldığı için eklemler daha çok yük alır, egzersiz cihazlarında da zorlanma olabilir. Ağrı hangi eklemde, şişlik ya da kızarıklık var mı?",
+      "causes": [
+        {"name": "Kas zayıflamasına bağlı eklem yüklenmesi", "likelihood": 40, "space_related": true, "reason": "Destekleyici kaslar küçüldükçe eklem stabilitesi azalır."},
+        {"name": "ARED/T2 egzersiz zorlanması", "likelihood": 30, "space_related": true, "reason": "Yüksek dirençli egzersizde yanlış form veya ani yük artışı."},
+        {"name": "Dekompresyon hastalığı (EVA sonrası)", "likelihood": 10, "space_related": true, "reason": "Uzay yürüyüşü sonrası eklemde derin ağrı DCS belirtisi olabilir."},
+        {"name": "İnflamatuar eklem hastalığı / enfeksiyon", "likelihood": 10, "space_related": false, "reason": "Şişlik, kızarıklık ve ateş eşlik ederse."}
+      ],
+      "steps": ["Ağrıyan eklemi dinlendir, egzersiz yükünü %50 azalt", "Soğuk kompres uygula (15 dk)", "Son 24 saatte EVA yapıldıysa DCS protokolünü değerlendir", "Eklem hareket açıklığını ve şişliği kontrol et"],
+      "medications": [{"name": "İbuprofen", "dose": "400 mg, 8 saatte bir, tok karna", "note": "En fazla 5 gün"}, {"name": "Parasetamol", "dose": "500-1000 mg, 6 saatte bir", "note": "Günde en fazla 3 g"}],
+      "questions": ["Hangi eklem ağrıyor?", "Son 24 saatte uzay yürüyüşü yaptın mı?", "Şişlik, kızarıklık veya sıcaklık var mı?", "Ağrı egzersizle mi arttı?"],
+      "monitoring": ["Ağrı skoru", "Vücut ısısı", "Egzersiz cihazı yük kaydı"],
+      "escalate": "EVA sonrası eklem ağrısı (DCS şüphesi), ateşli şiş eklem veya hareket edememe varsa acil."
+    },
+    {
+      "id": "ear",
+      "title": "Kulak ağrısı / basınç",
+      "keywords": ["kulak", "kulağım", "kulaklarım", "işitme", "çınlama", "uğultu", "tıkanık"],
+      "urgency": "monitor",
+      "related_condition_id": "sas",
+      "spoken": "{name}, kulak ağrısı ve dolgunluk uzayda sık görülür; sıvı başa kaydığı için östaki borusu ve sinüsler tıkanır, kabin basınç değişimi de etkiler. Valsalva manevrasını nazikçe dene. İşitme kaybı, akıntı ya da baş dönmesi var mı?",
+      "causes": [
+        {"name": "Östaki tüpü disfonksiyonu (sıvı kayması)", "likelihood": 45, "space_related": true, "reason": "Başa kayan sıvı mukozayı ödemlendirir."},
+        {"name": "Barotravma (kabin basıncı değişimi)", "likelihood": 25, "space_related": true, "reason": "EVA hazırlığı veya hava kilidi basınç değişimleri."},
+        {"name": "Dış/orta kulak enfeksiyonu", "likelihood": 20, "space_related": false, "reason": "Kulaklık kullanımı ve bağışıklık baskılanması."},
+        {"name": "Gürültüye bağlı kulak yorgunluğu", "likelihood": 10, "space_related": true, "reason": "Gemi içi sürekli fan gürültüsü."}
+      ],
+      "steps": ["Nazik Valsalva manevrası (burun kapalı hafif üfle)", "Otoskop ile kulak zarını incele", "Kulaklık kullanımına ara ver", "Kabin basıncını kontrol et"],
+      "medications": [{"name": "Psödoefedrin", "dose": "60 mg, 6 saatte bir", "note": "Tansiyon yüksekse kullanma"}, {"name": "İbuprofen", "dose": "400 mg, 8 saatte bir", "note": "Ağrı için"}],
+      "questions": ["Ağrı tek kulakta mı?", "İşitmende azalma var mı?", "Akıntı veya ateş var mı?", "Baş dönmesi eşlik ediyor mu?"],
+      "monitoring": ["Vücut ısısı", "İşitme testi", "Ağrı skoru"],
+      "escalate": "Ani işitme kaybı, kulaktan kanlı akıntı veya şiddetli baş dönmesi varsa acil."
+    },
+    {
+      "id": "headache",
+      "title": "Baş ağrısı",
+      "keywords": ["baş ağr", "başım ağr", "migren", "kafam", "şakak"],
+      "urgency": "monitor",
+      "related_condition_id": "sans",
+      "spoken": "{name}, uzayda baş ağrısının en sık nedenleri sıvının başa kayması ve kabindeki karbondioksittir. Kabin CO₂ değerini kontrol ediyorum. Görmende bulanıklık ya da bulantı var mı?",
+      "causes": [
+        {"name": "Sıvı kaymasına bağlı kafa içi basınç artışı", "likelihood": 35, "space_related": true, "reason": "Başa kayan sıvı; SANS ile ilişkili olabilir."},
+        {"name": "Kabin CO₂ yüksekliği", "likelihood": 30, "space_related": true, "reason": "Konveksiyon olmadığı için CO₂ yüz çevresinde birikebilir."},
+        {"name": "Uyku eksikliği / dehidratasyon", "likelihood": 25, "space_related": true, "reason": "Uzayda uyku ~6 saat; susama hissi azalır."},
+        {"name": "Gerilim tipi baş ağrısı", "likelihood": 10, "space_related": false, "reason": "Stres ve iş yükü."}
+      ],
+      "steps": ["Kabin CO₂ ve havalandırmayı kontrol et, fan yakınına geç", "500 ml su iç", "Görme keskinliği testi yap", "30 dk dinlen"],
+      "medications": [{"name": "Parasetamol", "dose": "500-1000 mg", "note": "Günde en fazla 3 g"}, {"name": "İbuprofen", "dose": "400 mg", "note": "Alternatif"}],
+      "questions": ["Ağrı ani ve hayatının en şiddetlisi mi?", "Görmende bulanıklık var mı?", "Bulantı veya kusma var mı?", "Ne kadar uyudun?"],
+      "monitoring": ["Kabin CO₂", "Tansiyon", "Görme keskinliği"],
+      "escalate": "Ani ve çok şiddetli baş ağrısı, görme kaybı, konuşma bozukluğu veya güçsüzlük varsa acil."
+    },
+    {
+      "id": "eye",
+      "title": "Göz şikâyeti",
+      "keywords": ["göz", "gözüm", "görme", "bulanık", "yakını göremiyorum", "batma"],
+      "urgency": "monitor",
+      "related_condition_id": "sans",
+      "spoken": "{name}, görme değişikliği uzayda SANS belirtisi olabilir; sıvı kayması göz arkasında ödem yapar. Gözüne yabancı cisim kaçmadıysa OCT taraması planlıyorum. Bulanıklık uzağı mı yakını mı etkiliyor?",
+      "causes": [
+        {"name": "SANS (optik disk ödemi, koroid kıvrımları)", "likelihood": 45, "space_related": true, "reason": "Uzun görevlerde sık görülür."},
+        {"name": "Yabancı cisim (yüzen partikül)", "likelihood": 30, "space_related": true, "reason": "Mikroyerçekiminde toz ve partiküller havada süzülür."},
+        {"name": "Kuru göz", "likelihood": 25, "space_related": true, "reason": "Düşük kabin nemi ve ekran kullanımı."}
+      ],
+      "steps": ["Yabancı cisim şüphesinde göz yıkama", "Görme keskinliği ve Amsler testi", "OCT / fundus görüntüleme", "Ekran süresine ara ver"],
+      "medications": [{"name": "Suni gözyaşı", "dose": "Günde 4-6 kez", "note": "Kuruluk için"}],
+      "questions": ["Bulanıklık yakını mı uzağı mı etkiliyor?", "Gözüne bir şey kaçtı mı?", "Ağrı veya kızarıklık var mı?"],
+      "monitoring": ["Görme keskinliği", "OCT bulguları"],
+      "escalate": "Ani görme kaybı veya şiddetli göz ağrısı varsa acil."
+    },
+    {
+      "id": "nausea",
+      "title": "Bulantı / baş dönmesi",
+      "keywords": ["mide bulan", "bulantı", "kusma", "kustum", "baş dön", "denge", "midem"],
+      "urgency": "monitor",
+      "related_condition_id": "sas",
+      "spoken": "{name}, bulantı ve baş dönmesi büyük olasılıkla uzay adaptasyon sendromu; iç kulak ile gözler çelişiyor. Başını sabit tut, bir noktaya odaklan. Prometazin alabilirsin, kusma olursa kusma torbasını hazır tut.",
+      "causes": [
+        {"name": "Uzay adaptasyon sendromu", "likelihood": 55, "space_related": true, "reason": "Vestibüler sistem yerçekimi referansını kaybeder."},
+        {"name": "Radyasyon maruziyeti", "likelihood": 15, "space_related": true, "reason": "Yüksek doz SPE sonrası bulantı görülebilir."},
+        {"name": "Gastrointestinal enfeksiyon / gıda", "likelihood": 20, "space_related": false, "reason": "Ateş ve ishal eşlik ederse."},
+        {"name": "Ortostatik intolerans", "likelihood": 10, "space_related": true, "reason": "Özellikle iniş sonrası."}
+      ],
+      "steps": ["Başını sabit tut, ani baş hareketinden kaçın", "Bir noktaya veya ufka odaklan", "Kusma torbasını hazır tut (kask içinde kusma tehlikelidir)", "EVA planlarını ertele", "Küçük yudumlarla sıvı al"],
+      "medications": [{"name": "Prometazin", "dose": "25 mg (IM veya oral)", "note": "Uyku hali yapar, kritik görev öncesi dikkat"}],
+      "questions": ["Kaç gündür uzaydasın veya Mars'a yeni mi indin?", "Kusma oldu mu?", "Ateş veya ishal var mı?"],
+      "monitoring": ["Hidrasyon", "Kalp hızı", "Radyasyon dozu"],
+      "escalate": "Kanlı kusma, 24 saatten uzun süren kusma veya bilinç bulanıklığı varsa acil."
+    },
+    {
+      "id": "back",
+      "title": "Bel / sırt ağrısı",
+      "keywords": ["bel", "belim", "sırt", "sırtım", "omurga", "kuyruk sokumu"],
+      "urgency": "monitor",
+      "related_condition_id": "spine",
+      "spoken": "{name}, uzayda bel ağrısı çok yaygın: omurga 5 santime kadar uzar ve diskler şişer. Dizlerini karnına çekerek fetal pozisyonda dinlen. Bacağına yayılan ağrı ya da uyuşma var mı?",
+      "causes": [
+        {"name": "Omurga uzaması ve disk şişmesi", "likelihood": 55, "space_related": true, "reason": "Yerçekimi yükü olmadan diskler su çeker."},
+        {"name": "Kas spazmı / zayıflığı", "likelihood": 30, "space_related": true, "reason": "Duruş kasları kullanılmıyor."},
+        {"name": "Böbrek taşı (yan ağrısı)", "likelihood": 15, "space_related": true, "reason": "Yan ve kasığa yayılıyorsa."}
+      ],
+      "steps": ["Fetal pozisyonda (dizler göğüse) 15 dk dinlen", "Hafif çekirdek kas egzersizi", "Isı/soğuk uygulama", "Ağrı yana veya kasığa yayılıyorsa ultrason"],
+      "medications": [{"name": "İbuprofen", "dose": "400 mg, 8 saatte bir", "note": "Tok karna"}],
+      "questions": ["Ağrı bacağa yayılıyor mu?", "Bacakta uyuşma veya güçsüzlük var mı?", "İdrar veya dışkı kontrolünde sorun var mı?"],
+      "monitoring": ["Ağrı skoru", "Nörolojik muayene"],
+      "escalate": "Bacakta güç kaybı, idrar/dışkı kaçırma veya kasık uyuşması varsa acil."
+    },
+    {
+      "id": "chest",
+      "title": "Göğüs ağrısı / çarpıntı",
+      "keywords": ["göğüs", "göğsüm", "çarpıntı", "kalbim", "kalp"],
+      "urgency": "emergency",
+      "related_condition_id": "orthostatic",
+      "spoken": "{name}, göğüs ağrısını acil kabul ediyorum. Hemen dur ve sabitlen. 12 kanallı EKG başlatıyorum, mürettebatı uyarıyorum. Ağrı koluna, çenene ya da sırtına yayılıyor mu, nefes darlığın var mı?",
+      "causes": [
+        {"name": "Kardiyak iskemi / aritmi", "likelihood": 30, "space_related": false, "reason": "Dışlanması gereken hayati neden."},
+        {"name": "Kas-iskelet göğüs ağrısı", "likelihood": 35, "space_related": true, "reason": "Egzersiz ve postür değişiklikleri."},
+        {"name": "Pulmoner emboli (pıhtı)", "likelihood": 15, "space_related": true, "reason": "Juguler ven pıhtısı uzayda gösterilmiştir."},
+        {"name": "Reflü", "likelihood": 20, "space_related": true, "reason": "Mikroyerçekiminde mide içeriği yer değiştirir."}
+      ],
+      "steps": ["Aktiviteyi derhal bırak", "12 kanallı EKG başlat", "SpO₂ düşükse O₂ ver", "Mürettebat sağlık görevlisini (CMO) çağır", "Dünya'ya öncelikli tıbbi rapor gönder"],
+      "medications": [{"name": "Aspirin", "dose": "300 mg çiğne", "note": "Kardiyak şüphede, kanama yoksa"}],
+      "questions": ["Ağrı kola, çeneye veya sırta yayılıyor mu?", "Nefes darlığı var mı?", "Terleme veya bulantı var mı?"],
+      "monitoring": ["EKG", "SpO₂", "Tansiyon", "Kalp hızı"],
+      "escalate": "Göğüs ağrısı her zaman ACİL değerlendirilir."
+    },
+    {
+      "id": "respiratory",
+      "title": "Öksürük / nefes / boğaz",
+      "keywords": ["öksür", "boğaz", "nefes", "burnum", "nezle", "grip", "sinüs"],
+      "urgency": "monitor",
+      "related_condition_id": "immune",
+      "spoken": "{name}, uzayda burun ve sinüs tıkanıklığı sıvı kaymasından sık olur; bağışıklık da baskılandığı için enfeksiyona dikkat ediyorum. Ateşin var mı, nefes darlığı hissediyor musun?",
+      "causes": [
+        {"name": "Sıvı kaymasına bağlı nazal konjesyon", "likelihood": 40, "space_related": true, "reason": "'Uzay nezlesi' olarak bilinir."},
+        {"name": "Üst solunum yolu enfeksiyonu", "likelihood": 35, "space_related": true, "reason": "Bağışıklık baskılanması."},
+        {"name": "Kabin partikülü / alerji", "likelihood": 25, "space_related": true, "reason": "Havada süzülen toz."}
+      ],
+      "steps": ["Vücut ısısını ölç", "SpO₂ kontrolü", "Bol sıvı al", "Mürettebattan izole çalışma alanı düşün"],
+      "medications": [{"name": "Loratadin", "dose": "10 mg günde 1", "note": "Alerjik tıkanıklıkta"}, {"name": "Psödoefedrin", "dose": "60 mg", "note": "Tıkanıklıkta"}],
+      "questions": ["Ateşin var mı?", "Balgam rengi nasıl?", "Nefes darlığı var mı?"],
+      "monitoring": ["Vücut ısısı", "SpO₂", "Solunum hızı"],
+      "escalate": "SpO₂ %92 altı, nefes darlığı veya yüksek ateş varsa acil."
+    },
+    {
+      "id": "skin",
+      "title": "Cilt / yara / döküntü",
+      "keywords": ["cilt", "kaşıntı", "döküntü", "yara", "kızarık", "uçuk", "sivilce", "yanık"],
+      "urgency": "routine",
+      "related_condition_id": "immune",
+      "spoken": "{name}, uzayda cilt incelir ve yaralar geç iyileşir; uçuk gibi gizli virüsler de yeniden aktifleşebilir. Bölgeyi temizleyip fotoğrafını kaydedelim. Ateş ya da yayılma var mı?",
+      "causes": [
+        {"name": "Kuru cilt / dermatit", "likelihood": 40, "space_related": true, "reason": "Düşük nem, kısıtlı yıkanma."},
+        {"name": "Herpes reaktivasyonu (uçuk/zona)", "likelihood": 30, "space_related": true, "reason": "ISS astronotlarının %61'inde virüs saçılımı."},
+        {"name": "Yara enfeksiyonu", "likelihood": 30, "space_related": true, "reason": "Geç iyileşme ve bakteri değişimi."}
+      ],
+      "steps": ["Bölgeyi temizle ve fotoğrafla", "Nemlendirici uygula", "Yara varsa steril pansuman", "Tükürük viral testi (uçuk şüphesinde)"],
+      "medications": [{"name": "Valasiklovir", "dose": "1 g günde 2-3 kez", "note": "Uçuk/zona şüphesinde"}],
+      "questions": ["Döküntü kabarcıklı mı?", "Ağrı veya yanma var mı?", "Ateş var mı?"],
+      "monitoring": ["Vücut ısısı", "Lezyon fotoğrafı"],
+      "escalate": "Hızla yayılan kızarıklık, yüksek ateş veya gözü tutan döküntü varsa acil."
+    },
+    {
+      "id": "abdomen",
+      "title": "Karın ağrısı / sindirim",
+      "keywords": ["karnım", "karın", "kabız", "ishal", "gaz", "şişkinlik", "hazımsızlık", "mide ağr", "yan ağr"],
+      "urgency": "monitor",
+      "related_condition_id": "renal_stones",
+      "spoken": "{name}, uzayda kabızlık ve gaz çok yaygın, ama yana ve kasığa yayılan ağrı böbrek taşını düşündürür. Ağrının yeri ve kramp tarzında olup olmadığı önemli.",
+      "causes": [
+        {"name": "Kabızlık / gaz", "likelihood": 40, "space_related": true, "reason": "Azalmış hareket, lif ve sıvı."},
+        {"name": "Böbrek taşı", "likelihood": 25, "space_related": true, "reason": "Yan ağrısı kasığa yayılıyorsa."},
+        {"name": "Gastrit / reflü", "likelihood": 20, "space_related": true, "reason": "Stres ve NSAİİ kullanımı."},
+        {"name": "Apandisit", "likelihood": 15, "space_related": false, "reason": "Sağ alt karında artan ağrı."}
+      ],
+      "steps": ["Ağrının yerini ve karakterini kaydet", "Karın ultrasonu", "Sıvı ve lif alımını artır", "Sağ alt karın ağrısında hassasiyet muayenesi"],
+      "medications": [{"name": "Parasetamol", "dose": "500-1000 mg", "note": "Tanı netleşene kadar NSAİİ yerine"}],
+      "questions": ["Ağrı tam olarak nerede?", "Kramp tarzında mı, sürekli mi?", "Ateş, kusma veya ishal var mı?"],
+      "monitoring": ["Vücut ısısı", "Ağrı skoru", "İdrar"],
+      "escalate": "Sağ alt karında artan ağrı, sert karın, ateş veya kanlı dışkı varsa acil."
+    },
+    {
+      "id": "sleep",
+      "title": "Uykusuzluk / yorgunluk",
+      "keywords": ["uyku", "uyuyam", "uykusuz", "yorgun", "bitkin"],
+      "urgency": "routine",
+      "related_condition_id": "sleep",
+      "spoken": "{name}, uzayda ortalama uyku 6 saate düşer; ışık döngüsü ve gürültü iç saati bozar. Bu gece ışık programını ayarlıyorum. Gerekirse melatonin alabilirsin, kritik görevlerde çift onay kuralını açıyorum.",
+      "causes": [
+        {"name": "Sirkadiyen ritim kayması", "likelihood": 50, "space_related": true, "reason": "Işık döngüsü ve Mars günü farkı."},
+        {"name": "Gürültü / sıcaklık", "likelihood": 25, "space_related": true, "reason": "Kabin fanları."},
+        {"name": "Stres ve kaygı", "likelihood": 25, "space_related": true, "reason": "İzolasyon ve iş yükü."}
+      ],
+      "steps": ["Uyku öncesi 1 saat mavi ışığı azalt", "Kulak tıkacı ve göz maskesi kullan", "Uyku istasyonu sıcaklığını ayarla", "PVT testi ile uyanıklığı ölç"],
+      "medications": [{"name": "Melatonin", "dose": "3 mg, uykudan 30 dk önce", "note": "İlk tercih"}, {"name": "Zolpidem", "dose": "5-10 mg", "note": "Sadece gerektiğinde, 8 saat uyku imkânı varsa"}],
+      "questions": ["Kaç gecedir böyle?", "Uykuya dalmakta mı zorlanıyorsun, sık mı uyanıyorsun?", "Seni düşündüren bir şey var mı?"],
+      "monitoring": ["Uyku süresi (aktigrafi)", "PVT skoru", "HRV"],
+      "escalate": "PVT skoru belirgin düşerse kritik görevleri ertele."
+    },
+    {
+      "id": "mental",
+      "title": "Psikolojik zorlanma",
+      "keywords": ["stres", "kaygı", "endişe", "üzgün", "yalnız", "mutsuz", "gergin", "depresif", "ailemi özledim", "bunaldım", "panik"],
+      "urgency": "monitor",
+      "related_condition_id": "behavioral",
+      "spoken": "{name}, bunu paylaştığın için teşekkür ederim; bu çok insani ve uzun görevlerde beklenen bir durum. Birlikte nefes egzersizi yapalım: 4 saniye al, 7 tut, 8 ver. Ailenden kayıtlı bir mesaj açmamı ister misin?",
+      "causes": [
+        {"name": "İzolasyon ve kapalı ortam stresi", "likelihood": 50, "space_related": true, "reason": "Mars-500 ve uzun görev verileri."},
+        {"name": "Uyku eksikliği", "likelihood": 30, "space_related": true, "reason": "Duygu düzenlemeyi bozar."},
+        {"name": "İletişim gecikmesi", "likelihood": 20, "space_related": true, "reason": "Aileyle anlık konuşamamak."}
+      ],
+      "steps": ["4-7-8 nefes egzersizi (3 tur)", "Aileden kayıtlı mesaj veya VR doğa oturumu", "Güvendiğin bir mürettebat arkadaşınla konuş", "Dünya psikolojik destek ekibine öncelikli mesaj kuyruğu aç"],
+      "medications": [],
+      "questions": ["Bu his ne zamandır var?", "Uyku ve iştahın nasıl?", "Kendine zarar verme düşüncen var mı?"],
+      "monitoring": ["Uyku", "HRV", "Günlük ruh hali skoru"],
+      "escalate": "Kendine zarar verme düşüncesi varsa hemen mürettebata ve Dünya'ya acil bildir."
+    },
+    {
+      "id": "fever",
+      "title": "Ateş / halsizlik",
+      "keywords": ["ateş", "titreme", "üşüyorum", "halsiz", "terleme"],
+      "urgency": "monitor",
+      "related_condition_id": "immune",
+      "spoken": "{name}, ateşi ciddiye alıyorum; uzayda bağışıklık baskılanır ama bazal vücut ısısı da yaklaşık 1 derece yüksektir. Isını tekrar ölçelim ve kaynağı bulalım: öksürük, idrar yanması ya da yara var mı?",
+      "causes": [
+        {"name": "Enfeksiyon (solunum, idrar, cilt)", "likelihood": 50, "space_related": true, "reason": "Bağışıklık baskılanması."},
+        {"name": "Uzay ateşi (bazal ısı artışı)", "likelihood": 30, "space_related": true, "reason": "Isı atımı bozulur (Stahn 2017)."},
+        {"name": "Viral reaktivasyon", "likelihood": 20, "space_related": true, "reason": "EBV, VZV, HSV."}
+      ],
+      "steps": ["Isıyı 30 dk arayla iki kez ölç", "Odak araştır: idrar testi, boğaz, cilt", "Bol sıvı al", "Diğer mürettebattan mesafeyi koru"],
+      "medications": [{"name": "Parasetamol", "dose": "500-1000 mg, 6 saatte bir", "note": "38.5 °C üzerinde"}],
+      "questions": ["Ateş kaç derece?", "Öksürük, idrar yanması veya yara var mı?", "Ne zamandır var?"],
+      "monitoring": ["Vücut ısısı", "Kalp hızı", "SpO₂"],
+      "escalate": "39 °C üzeri ateş, ense sertliği, bilinç değişikliği veya düşük tansiyon varsa acil."
+    }
+  ]
+}

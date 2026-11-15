@@ -1,0 +1,48 @@
+1
+00:00:00,250 --> 00:00:03,300
+On the way to Mars, every message from Earth…
+
+2
+00:00:03,300 --> 00:00:05,300
+…arrives 22 minutes late.
+
+3
+00:00:05,380 --> 00:00:06,300
+Radiation.
+
+4
+00:00:06,300 --> 00:00:07,300
+Bone loss.
+
+5
+00:00:07,300 --> 00:00:08,500
+Vision damage.
+
+6
+00:00:08,500 --> 00:00:10,750
+The crew has no time to wait.
+
+7
+00:00:10,840 --> 00:00:15,050
+VanBlue Aegis: the onboard AI flight surgeon.
+
+8
+00:00:15,050 --> 00:00:18,900
+It monitors every astronaut in real time and predicts risk,
+
+9
+00:00:18,900 --> 00:00:21,500
+and takes action when Earth can't answer.
+
+10
+00:00:21,610 --> 00:00:25,500
+Powered by NASA standards and real space data.
+
+11
+00:00:25,500 --> 00:00:27,950
+Aegis: even when Earth is far away,
+
+12
+00:00:27,950 --> 00:00:29,450
+you are never alone.
+

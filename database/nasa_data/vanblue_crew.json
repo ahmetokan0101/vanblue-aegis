@@ -1,0 +1,15 @@
+{
+  "mission": {
+    "name": "VanBlue Ares-I",
+    "vehicle": "Orion MPCV + Deep Space Habitat",
+    "launch_date": "2026-06-25",
+    "transit_days": 210,
+    "max_earth_distance_km": 390000000
+  },
+  "crew": {
+    "astronot1": {"id": "astronot1", "name": "Astronot 1", "initials": "A1", "role": "Görev Komutanı / Sefer Lideri", "blood_type": "0 Rh+", "age": 38, "base_hr": 72, "base_bp": "118 / 76", "base_temp": 36.8, "base_rr": 16, "base_hydration": 96.2, "daily_dose_msv": 1.34, "radar": [95, 98, 90, 92, 96], "habitat": "Orion Komuta Güvertesi"},
+    "astronot2": {"id": "astronot2", "name": "Astronot 2", "initials": "A2", "role": "Baş Pilot / EVA Uzmanı", "blood_type": "A Rh+", "age": 41, "base_hr": 74, "base_bp": "120 / 78", "base_temp": 36.7, "base_rr": 15, "base_hydration": 95.8, "daily_dose_msv": 1.38, "radar": [92, 97, 88, 85, 94], "habitat": "Orion Habitat Modülü"},
+    "astronot3": {"id": "astronot3", "name": "Astronot 3", "initials": "A3", "role": "Uçuş Sistemleri Mühendisi", "blood_type": "B Rh+", "age": 35, "base_hr": 70, "base_bp": "116 / 74", "base_temp": 36.9, "base_rr": 16, "base_hydration": 97.1, "daily_dose_msv": 1.29, "radar": [88, 96, 91, 86, 92], "habitat": "İtki & Enerji Bölmesi"},
+    "astronot4": {"id": "astronot4", "name": "Astronot 4", "initials": "A4", "role": "Biyomedikal & Yaşam Destek Uzmanı", "blood_type": "0 Rh+", "age": 36, "base_hr": 68, "base_bp": "115 / 75", "base_temp": 36.6, "base_rr": 14, "base_hydration": 98.0, "daily_dose_msv": 1.25, "radar": [94, 99, 93, 89, 97], "habitat": "ECLSS Yaşam Destek Modülü"}
+  }
+}

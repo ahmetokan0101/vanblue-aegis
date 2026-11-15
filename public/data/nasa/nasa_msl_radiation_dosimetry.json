@@ -1,0 +1,36 @@
+{
+  "dataset_name": "NASA MSL RAD Deep Space Cruise & Solar Particle Event Dosimetry",
+  "instrument": "Radiation Assessment Detector (RAD)",
+  "mission": "Mars Science Laboratory (MSL) Deep Space Transit",
+  "doi": "10.1126/science.1235988",
+  "curator": "NASA Planetary Data System (PDS) & Southwest Research Institute (SwRI)",
+  "radiation_environment": {
+    "galactic_cosmic_rays_gcr": {
+      "average_daily_dose_rate_mgy_d": 0.48,
+      "average_daily_dose_equivalent_msv_d": 1.84,
+      "quality_factor_q": 3.82,
+      "description": "Omnidirectional high-energy protons and HZE nuclei during interplanetary cruise."
+    },
+    "solar_particle_events_spe": [
+      {
+        "event_id": "SPE-2012-03-07",
+        "peak_flux_msv_hr": 19.5,
+        "cumulative_event_dose_msv": 46.2,
+        "solar_flare_class": "X5.4",
+        "recommended_action": "Transit to spacecraft storm shelter immediately (water/polyethylene shielding >20 g/cm2)"
+      },
+      {
+        "event_id": "SPE-2012-05-17",
+        "peak_flux_msv_hr": 3.8,
+        "cumulative_event_dose_msv": 9.4,
+        "solar_flare_class": "M5.1",
+        "recommended_action": "Non-critical SPE; monitor active dosimeter and limit EVA spacewalks."
+      }
+    ],
+    "mars_surface_gcr_msv_d": 0.64,
+    "earth_background_average_msv_d": 0.0065
+  },
+  "nominal_artemis_daily_baseline_msv": 1.34,
+  "warning_threshold_msv": 3.0,
+  "critical_solar_flare_threshold_msv": 5.0
+}

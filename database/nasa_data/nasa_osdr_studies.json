@@ -1,0 +1,49 @@
+{
+  "repository": "NASA Open Science Data Repository (OSDR)",
+  "api_endpoint": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/{OSD-ID}/metadata/",
+  "snapshot_note": "OSDR Biological Data API'den 2026-11-14 tarihinde doğrulanmış kopya; canlı bağlantı yoksa kullanılır.",
+  "studies": [
+    {
+      "accession": "OSD-87",
+      "title": "Spaceflight effects on the mouse retina: Histological, gene expression and epigenetic changes after flight on STS-135",
+      "project": "Spaceflight Effects on the Mouse Retina",
+      "mission": "STS-135",
+      "mission_start": "07/08/2011",
+      "mission_end": "07/21/2011",
+      "flight_program": "Space Transportation System (STS)",
+      "organism": "Mus musculus",
+      "publication": "Molecular Effects of Spaceflight in the Mouse Eye after Space Shuttle Mission STS-135",
+      "summary": "STS-135 uçuşundaki farelerde retina biyolojisi üzerindeki uzay etkileri gen ifadesi profili ile incelendi.",
+      "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-87",
+      "condition_id": "sans"
+    },
+    {
+      "accession": "OSD-242",
+      "title": "Effect of spaceflight on liver from mice flown on the ISS for 33 days: transcriptional analysis",
+      "project": "Rodent Research-9",
+      "mission": "SpaceX-12",
+      "mission_start": "8/14/17",
+      "mission_end": "9/17/17",
+      "flight_program": "International Space Station (ISS)",
+      "organism": "Mus musculus",
+      "publication": null,
+      "summary": "RR-9 görevi, uzun süreli uçuşta astronotları etkileyen olayların (özellikle görme bozukluğu) moleküler temelini farelerle araştırdı.",
+      "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-242",
+      "condition_id": "sans"
+    },
+    {
+      "accession": "OSD-137",
+      "title": "Rodent Research-3-CASIS: Mouse liver transcriptomic, proteomic, epigenomic and histology data",
+      "project": "Rodent Research 3 (RR3)",
+      "mission": "SpaceX-8",
+      "mission_start": "4/8/2016",
+      "mission_end": "5/11/2016",
+      "flight_program": "International Space Station (ISS)",
+      "organism": "Mus musculus",
+      "publication": "Multi-omics analysis of multiple missions to space reveal a theme of lipid dysregulation in mouse liver",
+      "summary": "39-42 gün mikroyerçekiminde kalan farelerin karaciğerinde çoklu-omik analiz; uzay görevlerinde lipit metabolizması bozulması teması.",
+      "link": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-137",
+      "condition_id": "immune"
+    }
+  ]
+}

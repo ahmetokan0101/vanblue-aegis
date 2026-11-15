@@ -1,0 +1,51 @@
+{
+  "source": "NASA-STD-3001 Vol.1 Rev B (2022) radyasyon limitleri + genel klinik referans aralıkları",
+  "standard_version": "Rev B (2022)",
+  "note": "Radyasyon limitleri NASA-STD-3001'den alınmıştır. Nabız, SpO2 ve ısı eşikleri NASA standardı değil, genel klinik referans aralıklarıdır ve prototipte triage için kullanılır.",
+  "biometric_reference_standards": {
+    "heart_rate_bpm": {
+      "parameter": "Kalp Hızı (istirahat)",
+      "normal_range_resting": [60, 85],
+      "alert_tachycardia": 105,
+      "alert_bradycardia": 48,
+      "unit": "BPM",
+      "citation": "Genel klinik referans (istirahat nabzı 60–100 BPM; AHA) — prototip eşiği"
+    },
+    "oxygen_saturation_spo2": {
+      "parameter": "Oksijen Satürasyonu (SpO2)",
+      "nominal_target": [95.0, 99.5],
+      "hypoxia_caution": 93.0,
+      "critical_hypoxia": 89.0,
+      "unit": "% SpO2",
+      "citation": "Genel klinik referans (SpO2 ≥%95 normal, <%90 hipoksemi) — prototip eşiği"
+    },
+    "core_body_temperature": {
+      "parameter": "Çekirdek Vücut Sıcaklığı",
+      "normal_space_baseline_c": 36.8,
+      "space_fever_onset_c": 37.8,
+      "unit": "°C",
+      "spaceflight_phenomenon": "Uzun süreli uçuşta çekirdek vücut ısısı ~1 °C yükselebilir (uzay ateşi).",
+      "citation": "Stahn et al., Scientific Reports 2017"
+    },
+    "intracranial_pressure_sans": {
+      "parameter": "SANS (Uzay Uçuşuyla İlişkili Nöro-oküler Sendrom)",
+      "risk_score_scale": "Frisén Grade 0-5 / OCT",
+      "nominal_grade": 0,
+      "countermeasure": "LBNP araştırma aşamasında (Marshall-Goebel 2019: 17 seansın 10'unda akış iyileşmesi)",
+      "citation": "NASA HRP SANS Risk; OCT ile 6 aylık görevlerde ~%70 optik disk ödemi"
+    },
+    "bone_mineral_density": {
+      "parameter": "Kemik Mineral Yoğunluğu Kaybı",
+      "zero_g_decay_without_countermeasure": "Ayda %1–1.5 (kalça ve omurga)",
+      "decay_with_ared_exercise": "ARED + yeterli enerji/D vitamini ile BMD büyük ölçüde korunabilir",
+      "required_countermeasure": "ARED direnç egzersizi",
+      "citation": "NASA HRP Bone Evidence; Smith et al., J Bone Miner Res 2012"
+    },
+    "permissible_exposure_limit_pel": {
+      "parameter": "Radyasyon Maruziyet Limitleri",
+      "career_limit_msv": 600,
+      "spe_event_limit_msv": 250,
+      "standard_source": "NASA-STD-3001 Vol.1 Rev B (2022): kariyer < 600 mSv efektif doz (yaş/cinsiyetten bağımsız); SPE olayı başına 250 mSv"
+    }
+  }
+}
